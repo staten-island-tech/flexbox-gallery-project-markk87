@@ -9,6 +9,7 @@ body {
     display: block;
     font-size: 4rem;
     text-align: center;
+    font-family: "Sofia", sans-serif;
 }
 .card{
     display: flex;
