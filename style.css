@@ -7,28 +7,49 @@ body {
 }
 .header{
     display: block;
+    animation: test 5s ease-out alternate infinite;
     font-size: 4rem;
+    position: absolute;
     text-align: center;
     font-family: "Sofia", sans-serif;
+}
+@keyframes test{
+    0% {
+        right: 0;
+        top: 0%;
+    }
+    100% {
+        right: 70%
+
+    }
 }
 .card{
     display: flex;
     flex-direction: column;
     width: 19%;
     height: 30vw;
+    position: relative;
     align-items: center;
     background-color: rgba(120, 120, 120, 0.6);
     margin-bottom: 5%;
-    margin: 2% 2.5%;
+    margin-top: 7%;
+    margin: 9% 2.5%;
     border: 3px solid black;
     transition: all 0.4s;
 
 }
-
 .card:hover {
+    transform: rotateY('360');
     transform: scale(1.1);
+    animation: 4s;
     box-shadow: 10px 10px 5px black;
 }
+@keyframes rotate{
+    from{transform: rotateY('0');}
+    to{transform: rotateY('180');}
+}
+
+
 
 .card-img {
     width: 100%;
