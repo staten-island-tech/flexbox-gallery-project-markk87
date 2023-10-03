@@ -118,7 +118,7 @@ body {
     justify-content: space-between;
 
 }
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     .card,
 .card-1,
 .card-2,
@@ -126,5 +126,15 @@ body {
 .card-4,
 .card-5{
     width: 100%;
+}
+@media screen and (min-width: 834px) {
+    .card,
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5{
+    width: 40%;
+}
 }
 }
